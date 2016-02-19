@@ -1,0 +1,19 @@
+# Idea #
+.idea
+*.iml
+*.ipr
+*.iws
+*.uml
+
+
+# Gradle #
+.gradle/
+build/
+out
+
+
+# Pid #
+*.pid
+
+# log #
+log/
