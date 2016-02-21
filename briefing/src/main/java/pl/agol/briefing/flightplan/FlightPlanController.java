@@ -27,7 +27,6 @@ public class FlightPlanController extends WebMvcConfigurerAdapter {
         return "flight-plan";
     }
 
-
     @RequestMapping(method = POST)
     public String submitFlightPlanForm(@Valid FlightPlanRequest flightPlanRequest,
                                        BindingResult bindingResult) {
@@ -35,6 +34,8 @@ public class FlightPlanController extends WebMvcConfigurerAdapter {
         if (bindingResult.hasErrors()) {
             return "flight-plan";
         }
+
+        flightPlanService.submit(flightPlanRequest);
         return "success";
     }
 }
