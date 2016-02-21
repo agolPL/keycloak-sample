@@ -24,19 +24,19 @@ public class FlightPlanController {
 
 
     @RequestMapping(method = POST)
-    public ResponseEntity receive(@RequestBody FlightPlanRequest flightPlanRequest,
-                                  UriComponentsBuilder uriComponentsBuilder) {
+    public ResponseEntity receive(@RequestBody FlightPlanRequest flightPlanRequest) {
 
         FlightPlan flightPlan = flightPlanService.receive(
                 flightPlanRequest.getFlightPlan(), flightPlanRequest.getPilotName());
 
         return ResponseEntity
-                .created(buildUriFor(flightPlan, uriComponentsBuilder))
+                .created(buildUriFor(flightPlan))
                 .build();
     }
 
-    private URI buildUriFor(FlightPlan flightPlan, UriComponentsBuilder uriComponentsBuilder) {
-        return uriComponentsBuilder.path("/api/flightplans/{id}")
+    private URI buildUriFor(FlightPlan flightPlan) {
+        return UriComponentsBuilder
+                .fromPath("/api/flightplans/{id}")
                 .buildAndExpand(flightPlan.getId())
                 .toUri();
     }
