@@ -7,7 +7,20 @@
 </head>
 <body>
 
-<form action="#" th:action="@{/flightplan}" th:object="${flightPlanSubmitRequest}" method="post">
+<form action="#" th:action="@{/flightplan}" th:object="${flightPlanRequest}" method="post">
+    <dl>
+        <dt><label for="flightPlan">Flight Plan:</label></dt>
+        <dd>
+            <input id="flightPlan" type="text" th:field="*{flightPlan}"/>
+            <td th:if="${#fields.hasErrors('flightPlan')}" th:errors="*{flightPlan}"></td>
+        </dd>
+
+        <dt><label for="pilotName">Pilot Name:</label></dt>
+        <dd>
+            <input id="pilotName" type="text" th:field="*{pilotName}"/>
+            <td th:if="${#fields.hasErrors('pilotName')}" th:errors="*{pilotName}"></td>
+        </dd>
+    </dl>
     <button type="submit">Send</button>
 </form>
 

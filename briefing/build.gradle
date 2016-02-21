@@ -25,6 +25,6 @@ configurations {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-undertow'
-    compile 'org.thymeleaf:thymeleaf-spring4'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
     compile 'org.projectlombok:lombok:1.16.4'
 }
