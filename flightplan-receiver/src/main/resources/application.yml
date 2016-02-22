@@ -1,3 +1,4 @@
 server:
     port: 8090
 
+flightplan-parser-url: http://192.168.1.10:8091/api/flightplan/parse

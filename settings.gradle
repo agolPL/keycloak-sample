@@ -1,6 +1,6 @@
 rootProject.name = 'keycloak-sample'
 
-include 'flightplan-validator'
+include 'flightplan-parser'
 
 include 'flightplan-receiver'
 
@@ -8,5 +8,5 @@ include 'traffic'
 
 include 'briefing'
 
-include 'flightplan-parser'
+
 

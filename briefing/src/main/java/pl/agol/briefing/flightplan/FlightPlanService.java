@@ -16,16 +16,10 @@ public class FlightPlanService {
 
     @Autowired
     public FlightPlanService(RestTemplate restTemplate,
-                             @Value("${briefing.flightplan-receiver-url}") String flightPlanReceiverUrl) {
+                             @Value("${flightplan-receiver-url}") String flightPlanReceiverUrl) {
 
         this.restTemplate = restTemplate;
         this.flightPlanReceiverUrl = flightPlanReceiverUrl;
-    }
-
-    public FlightPlanValidationResult validate(String flightPlan) {
-
-        //TODO: use validate flight-plan service
-        return new FlightPlanValidationResult();
     }
 
     public void submit(FlightPlanRequest flightPlanRequest) {

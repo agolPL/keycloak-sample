@@ -5,12 +5,12 @@
     <title>Briefing</title>
 </head>
 <body>
-
+<h1>@BOZ</h1>
 <form action="#" th:action="@{/flightplan}" th:object="${flightPlanRequest}" method="post">
     <dl>
         <dt><label for="flightPlan">Flight Plan:</label></dt>
         <dd>
-            <input id="flightPlan" type="text" th:field="*{flightPlan}"/>
+            <textarea rows="15" cols="80" id="flightPlan" type="text" th:field="*{flightPlan}"/>
             <td th:if="${#fields.hasErrors('flightPlan')}" th:errors="*{flightPlan}"></td>
         </dd>
 
