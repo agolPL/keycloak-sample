@@ -1,10 +1,8 @@
 package pl.agol.traffic.flightplan;
 
 import lombok.Data;
-import lombok.experimental.Accessors;
 
 @Data
-@Accessors(chain = true)
 public class FlightPlan {
 
     private String id;

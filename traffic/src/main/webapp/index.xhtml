@@ -11,14 +11,41 @@
 </h:head>
 <h:body bgcolor="white">
     <h2>Flight plans</h2>
-    <h:dataTable value="#{flightPlanController.flightPlans}" var="fpl"
-                 styleClass="order-table"
-                 headerClass="order-table-header"
-                 rowClasses="order-table-odd-row,order-table-even-row">
+    <h:dataTable border="3" value="#{flightPlanController.flightPlans}" var="fpl">
+
+        <h:column>
+            <f:facet name="header">Fpl id</f:facet>
+            #{fpl.id}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Collsign</f:facet>
+            #{fpl.callsign}
+        </h:column>
 
         <h:column>
             <f:facet name="header">Aircraft Type</f:facet>
             #{fpl.aircraftType}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Departure</f:facet>
+            #{fpl.departure}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Destination</f:facet>
+            #{fpl.pilotName}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Route</f:facet>
+            #{fpl.route}
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">Pilot Name</f:facet>
+            #{fpl.pilotName}
         </h:column>
 
     </h:dataTable>
