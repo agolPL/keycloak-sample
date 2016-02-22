@@ -8,3 +8,5 @@ include 'traffic'
 
 include 'briefing'
 
+include 'flightplan-parser'
+
