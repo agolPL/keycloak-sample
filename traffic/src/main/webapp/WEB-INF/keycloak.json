@@ -1,0 +1,8 @@
+{
+  "realm": "PANSA",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArQLyMqXwIfjuHL9mgFXG+fYQ5PTWyXL3Ss3AotmBcMs4sb9pLIlZFdwRSEJnZBPogR5cnDpgh9F60ICwxBR7hLPSsrEh9P+PjpCjKYMJLWQf1x4VYCYMtB22kLHN7f4TOFC3AxZLWvFQp2OZHhWfCBd4PxaAi+HrRXxzDRD7EtZQQI8qJ925z9zWa6+QIuoCvFytb5Vp/+eI7V5QylAZ40hKIlJ6wt/1k6lBmLpekQ38PDQSiEZ1ygDo/B+taOFam4R7NK65ECfhMnEQf3zF6vWoGt5HCYdtg2bOAnqRkNjTe6Ism4iCBtyU6F1YbuWb66m7VIN9yiCMV936Hva1pwIDAQAB",
+  "auth-server-url": "http://localhost:8080/auth",
+  "ssl-required": "external",
+  "resource": "traffic",
+  "public-client": true
+}
