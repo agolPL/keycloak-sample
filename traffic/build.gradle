@@ -13,4 +13,7 @@ dependencies {
     compile 'javax.enterprise:cdi-api:1.2'
     compile 'org.projectlombok:lombok:1.16.4'
     compile 'org.jboss.resteasy:jaxrs-api:3.0.12.Final'
+
+    compile 'javax.servlet:servlet-api:2.5'
+    compile 'org.keycloak:keycloak-core:1.8.1.Final'
 }
