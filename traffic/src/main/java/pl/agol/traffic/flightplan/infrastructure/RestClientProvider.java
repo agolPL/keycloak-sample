@@ -1,4 +1,4 @@
-package pl.agol.traffic.flightplan;
+package pl.agol.traffic.flightplan.infrastructure;
 
 import javax.enterprise.inject.Produces;
 import javax.ws.rs.client.Client;
