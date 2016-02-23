@@ -21,7 +21,4 @@ repositories {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.projectlombok:lombok:1.16.4'
-
-    compile 'org.keycloak:keycloak-spring-boot-adapter:1.8.1.Final'
-    compile 'org.keycloak:keycloak-tomcat8-adapter:1.8.1.Final'
 }

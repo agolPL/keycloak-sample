@@ -1,16 +1,4 @@
 server:
     port: 8090
 
-flightplan-parser-url: http://192.168.1.10:8091/api/flightplan/parse
-
-
-keycloak.realm: PANSA
-keycloak.realmKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArQLyMqXwIfjuHL9mgFXG+fYQ5PTWyXL3Ss3AotmBcMs4sb9pLIlZFdwRSEJnZBPogR5cnDpgh9F60ICwxBR7hLPSsrEh9P+PjpCjKYMJLWQf1x4VYCYMtB22kLHN7f4TOFC3AxZLWvFQp2OZHhWfCBd4PxaAi+HrRXxzDRD7EtZQQI8qJ925z9zWa6+QIuoCvFytb5Vp/+eI7V5QylAZ40hKIlJ6wt/1k6lBmLpekQ38PDQSiEZ1ygDo/B+taOFam4R7NK65ECfhMnEQf3zF6vWoGt5HCYdtg2bOAnqRkNjTe6Ism4iCBtyU6F1YbuWb66m7VIN9yiCMV936Hva1pwIDAQAB
-keycloak.auth-server-url: http://localhost:8080/auth
-keycloak.ssl-required: external
-keycloak.resource: flightplan-receiver
-keycloak.public-client: true
-
-keycloak.securityConstraints[0].securityCollections[0].name: flightplan
-keycloak.securityConstraints[0].securityCollections[0].authRoles[0]: pilot
-keycloak.securityConstraints[0].securityCollections[0].patterns[0]: /*
+flightplan-parser-url: http://localhost:8091/api/flightplan/parse
