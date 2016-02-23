@@ -18,7 +18,12 @@ repositories {
     jcenter()
 }
 
+configurations {
+    compile.exclude module: 'spring-boot-starter-tomcat'
+}
+
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-undertow'
     compile 'org.projectlombok:lombok:1.16.4'
 }
