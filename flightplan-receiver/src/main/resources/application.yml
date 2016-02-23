@@ -2,3 +2,14 @@ server:
     port: 8090
 
 flightplan-parser-url: http://localhost:8091/api/flightplan/parse
+
+keycloak.realm: TJUG
+keycloak.realmKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjZGvP/UraJ3gn0ghumVrsTjLbOA0owbjx+WLOuVwy3YWDtW6pyydqaH/si6hUdlJQUOiDUgFtQyxDpdZFv1c0tJio+x6rs3gi0xq2eXslxaxpS/FSR89sbrZV+ANc2on+FZ2GaYHQtkY6aT6r3+uPGbZDSRNFLdDVI60x6CuxRS9iLOWQOiZmE2oUlOZgdkPF5L1yTmJ1pGUBiBfl/Y6T+sgElITVUELL7080ia0bcMOeWhPbqXFZqlE/6aC+7r9r2dX2aYAgiHUkSdfcM3914nc0SmYebltARYmCc8N/C47cTuiWiSiuvCiww+zoAEeVI9nymkKnEz/Ug/eacdQxwIDAQAB
+keycloak.auth-server-url: http://localhost:8080/auth
+keycloak.ssl-required: external
+keycloak.resource: flightplan-receiver
+keycloak.public-client: true
+
+keycloak.securityConstraints[0].securityCollections[0].name: flightplan
+keycloak.securityConstraints[0].securityCollections[0].authRoles[0]: pilot
+keycloak.securityConstraints[0].securityCollections[0].patterns[0]: /*
