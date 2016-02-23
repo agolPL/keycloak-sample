@@ -3,3 +3,6 @@ server:
 
 flightplan-receiver-url: http://192.168.1.10:8090/api/flightplans/
 
+keycloak:
+    configurationFile: classpath:keycloak.json
+
