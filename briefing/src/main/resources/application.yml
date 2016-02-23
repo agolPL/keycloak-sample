@@ -3,3 +3,5 @@ server:
 
 flightplan-receiver-url: http://localhost:8090/api/flightplans/
 
+keycloak:
+    configurationFile: classpath:keycloak.json

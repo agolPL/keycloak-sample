@@ -1,0 +1,8 @@
+{
+  "realm": "TJUG",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjZGvP/UraJ3gn0ghumVrsTjLbOA0owbjx+WLOuVwy3YWDtW6pyydqaH/si6hUdlJQUOiDUgFtQyxDpdZFv1c0tJio+x6rs3gi0xq2eXslxaxpS/FSR89sbrZV+ANc2on+FZ2GaYHQtkY6aT6r3+uPGbZDSRNFLdDVI60x6CuxRS9iLOWQOiZmE2oUlOZgdkPF5L1yTmJ1pGUBiBfl/Y6T+sgElITVUELL7080ia0bcMOeWhPbqXFZqlE/6aC+7r9r2dX2aYAgiHUkSdfcM3914nc0SmYebltARYmCc8N/C47cTuiWiSiuvCiww+zoAEeVI9nymkKnEz/Ug/eacdQxwIDAQAB",
+  "auth-server-url": "http://localhost:8080/auth",
+  "ssl-required": "external",
+  "resource": "briefing",
+  "public-client": true
+}
